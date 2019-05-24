@@ -18,9 +18,9 @@ def pca(data, k):
 
     value, vector = np.linalg.eig(cov)
 
-    sorted_vector = np.array([vec for val, vec in sorted(zip(value, vector), key=lambda x: x[0], reverse=True)])
-    w = sorted_vector[:k]
+    index = np.argsort(-value)[: k]
+    w = vector[:, index]
 
-    return np.dot(data, w.T)
+    return np.dot(after_demean, w)
 
     # ********* End *********#
