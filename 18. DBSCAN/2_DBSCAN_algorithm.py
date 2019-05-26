@@ -1,7 +1,7 @@
 # encoding=utf8
 import numpy as np
 import random
-from copy import deepcopy, copy
+from copy import copy
 from collections import deque
 
 
