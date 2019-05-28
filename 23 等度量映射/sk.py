@@ -4,6 +4,7 @@ import isomap as isa
 import sklearn.datasets as db
 
 
+
 def isomap(data, d, k):
     '''
     input:data(ndarray):待降维数据
