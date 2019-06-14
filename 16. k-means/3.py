@@ -72,7 +72,7 @@ class Kmeans():
 
     # 将所有样本进行归类，其所在的类别的索引就是其类别标签
     def get_cluster_labels(self, clusters, X):
-        return null
+        return
 
     # 对整个数据集X进行Kmeans聚类，返回其聚类的标签
     def predict(self, X):
@@ -97,28 +97,3 @@ class Kmeans():
         return np.array(clusters).reshape([X.shape[0], ])
 
     # ********* End *********#
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
